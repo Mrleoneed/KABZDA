@@ -1,73 +1,24 @@
 import React from 'react';
 import './App.css';
+import Accordion from "./Components/Accordion/Accordion";
+import {Rating} from "./Rating/Rating";
 
 
 function App() {
     console.log('App Rendered')
     return (
         <div>
-            <Rating/>
-            <Accordion/>
+            Article 1
+            <Rating value={3}/>
+            <Accordion title={"Меню"}/>
+            Article 1
+            <Rating value={1}/>
+            <Rating value={2}/>
+            <Rating value={3}/>
+            <Rating value={4}/>
+            <Rating value={5}/>
         </div>
     );
-}
-
-function Rating() {
-    console.log('Rating Rendered')
-    return (
-        <>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </>
-    )
-}
-
-function Accordion() {
-    console.log('Accordion Rendered')
-    return (
-        <>
-            <AccordionTitle/>
-            <AccordionBody/>
-
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </>
-    )
-}
-
-function Star() {
-    console.log('Star Rendered')
-    return (
-        <div>Star </div>
-    )
-}
-
-function AccordionTitle() {
-    console.log('AccordionTitle Rendered')
-    return (
-        <>
-            <h3>Меню</h3>
-        </>
-    )
-}
-
-function AccordionBody() {
-    console.log('AccordionBody Rendered')
-    return (
-        <>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </>
-    )
 }
 
 
