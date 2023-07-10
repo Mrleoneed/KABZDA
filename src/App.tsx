@@ -4,20 +4,20 @@ import Accordion from "./Components/Accordion/Accordion";
 import {Rating} from "./Components/Rating/Rating";
 import {OnOff} from "./Components/OnOff/OnOff";
 import UnControlledAccordion from "./Components/UnControlledAccordion/UnControlledAccordion";
+import {UnControlledRating} from "./Components/UnControlledRating/Rating";
 
 
 function App() {
     console.log('App Rendered')
     return (
-        <div>
+        <div className={'App'}>
 
             <OnOff/>
             <OnOff/>
-
-            <UnControlledAccordion titleValue={"Меню"}/>
+<Accordion titleValue={'Ha-Ha'} collapsed={false}/>
             <UnControlledAccordion titleValue={"Меню"} />
-
-            <Rating value={5}/>
+            <UnControlledRating/>
+            <Rating value={2}/>
         </div>
     );
 }
