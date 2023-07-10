@@ -23,10 +23,11 @@ export function Rating(props: RatingPropsType) {
 }
 
 function Star(props: StarPropsType) {
-    console.log('Star Rendered')
-    if (props.selected) {
-        return <span><b>Star </b></span>
-    } else {
-        return <span>Star </span>
-    }
+    return (
+        <span>
+          {props.selected ?<b>Star</b> : 'Star'}
+    </span>
+
+    )
+
 }

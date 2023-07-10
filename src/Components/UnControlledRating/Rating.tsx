@@ -31,9 +31,16 @@ let [value,setValue]= useState(0)
 }
 
 function Star(props: StarPropsType) {
-    if (props.selected){
-        return <span><b>Star </b></span>
-    } else {
-        return <span>Star </span>
-    }
+return (
+    <span>
+          {props.selected ?<b>Star</b> : 'Star'}
+    </span>
+
+)
+
+    // if (props.selected){
+    //     return <span><b>Star </b></span>
+    // } else {
+    //     return <span>Star </span>
+    // }
 }
